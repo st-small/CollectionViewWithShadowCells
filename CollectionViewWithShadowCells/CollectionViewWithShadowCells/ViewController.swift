@@ -8,13 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+public class ViewController: UIViewController {
+    
+    private var menuCollectionView = MenuCollectionView()
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        view.addSubview(menuCollectionView)
+        
+        menuCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        menuCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        menuCollectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 20.0).isActive = true
+        menuCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        
+        menuCollectionView.set(cells: DishModel.fetchDishes())
     }
-
-
 }
 

@@ -12,6 +12,10 @@
 		5257025E223405E500CBEE94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5257025C223405E500CBEE94 /* Main.storyboard */; };
 		52570260223405E600CBEE94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5257025F223405E600CBEE94 /* Assets.xcassets */; };
 		52570263223405E600CBEE94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52570261223405E600CBEE94 /* LaunchScreen.storyboard */; };
+		5257026B2234072D00CBEE94 /* MenuCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5257026A2234072D00CBEE94 /* MenuCollectionView.swift */; };
+		5257026D22340B6900CBEE94 /* DishModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5257026C22340B6900CBEE94 /* DishModel.swift */; };
+		5257026F2234470400CBEE94 /* DishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5257026E2234470400CBEE94 /* DishCell.swift */; };
+		525702722234492800CBEE94 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525702712234492800CBEE94 /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		5257025F223405E600CBEE94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52570262223405E600CBEE94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52570264223405E600CBEE94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5257026A2234072D00CBEE94 /* MenuCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionView.swift; sourceTree = "<group>"; };
+		5257026C22340B6900CBEE94 /* DishModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishModel.swift; sourceTree = "<group>"; };
+		5257026E2234470400CBEE94 /* DishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCell.swift; sourceTree = "<group>"; };
+		525702712234492800CBEE94 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +64,24 @@
 			children = (
 				52570258223405E500CBEE94 /* AppDelegate.swift */,
 				5257025A223405E500CBEE94 /* ViewController.swift */,
+				5257026A2234072D00CBEE94 /* MenuCollectionView.swift */,
+				5257026E2234470400CBEE94 /* DishCell.swift */,
+				5257026C22340B6900CBEE94 /* DishModel.swift */,
 				5257025C223405E500CBEE94 /* Main.storyboard */,
 				5257025F223405E600CBEE94 /* Assets.xcassets */,
 				52570261223405E600CBEE94 /* LaunchScreen.storyboard */,
 				52570264223405E600CBEE94 /* Info.plist */,
+				525702702234490E00CBEE94 /* Extensions */,
 			);
 			path = CollectionViewWithShadowCells;
+			sourceTree = "<group>";
+		};
+		525702702234490E00CBEE94 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				525702712234492800CBEE94 /* UIImageView+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525702722234492800CBEE94 /* UIImageView+Extension.swift in Sources */,
+				5257026D22340B6900CBEE94 /* DishModel.swift in Sources */,
 				5257025B223405E500CBEE94 /* ViewController.swift in Sources */,
+				5257026F2234470400CBEE94 /* DishCell.swift in Sources */,
+				5257026B2234072D00CBEE94 /* MenuCollectionView.swift in Sources */,
 				52570259223405E500CBEE94 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
