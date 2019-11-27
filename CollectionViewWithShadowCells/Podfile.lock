@@ -9,7 +9,7 @@ DEPENDENCIES:
   - TTTAttributedLabel
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - SDWebImage
     - TTTAttributedLabel
 
@@ -19,4 +19,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 4c6a1266ac45b2dc2bb77ced4272e958c5b44bc9
 
-COCOAPODS: 1.6.0.rc.2
+COCOAPODS: 1.8.4
